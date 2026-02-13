@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 Una pregunta especial para ti...</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- MÚSICA DE FONDO -->
+        <audio id="loveMusic" loop>
+            <source src="musica.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- SECCIÓN DE LA PREGUNTA -->
+        <div class="proposal-section" id="proposalSection">
+            <span class="proposal-emoji">💝</span>
+            <h1 class="proposal-title">¿Quieres ser mi viernes 13 y mi San Valentín?</h1>
+            <p class="proposal-subtitle">Y todos los días que vienen después...</p>
+
+            <div class="answer-buttons">
+                <button class="btn-answer btn-yes" id="btnYes">SÍ 💕</button>
+                <button class="btn-answer btn-no" id="btnNo">No 💔</button>
+            </div>
+        </div>
+
+        <!-- SECCIÓN DE ACEPTACIÓN -->
+        <div class="acceptance-section" id="acceptanceSection">
+            <h1 class="celebration-title">💖 ¡GRACIAS POR DECIR QUE SÍ! 💖</h1>
+
+            <div class="love-message">
+                <p>
+                    <span class="highlight">Hace 3 años y un poco mas comenzo nuestra historia juntos.</span><br><br>
+                    Eres el regalo más bonito que la vida me ha dado.<br>
+                    Cada corazón aquí representa un latido<br>
+                    que late solo para ti.<br><br>
+                    <span class="highlight">Te amo con toda mi alma que hoy y los dias que vienen despué sean para siempre 💕</span>
+                </p>
+            </div>
+
+            <!-- CONTADOR DE DÍAS JUNTOS -->
+            <div class="timer-section" id="timerSection">
+                <h2 class="timer-title">⏰ Tiempo juntos desde que dijiste que sí</h2>
+                <div class="timer-display">
+                    <div class="time-unit">
+                        <span class="time-value" id="days">0</span>
+                        <span class="time-label">Días</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="hours">0</span>
+                        <span class="time-label">Horas</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="minutes">0</span>
+                        <span class="time-label">Minutos</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="seconds">0</span>
+                        <span class="time-label">Segundos</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CORAZONES -->
+            <div class="hearts-container" id="treeContainer">
+                <div class="falling-hearts" id="fallingHearts"></div>
+                <div id="treeHearts"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="funciones.js"></script>
+</body>
+
+</html>
