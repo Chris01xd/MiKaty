@@ -125,7 +125,7 @@ function createTreeHearts() {
     initials.className = "heart-initials";
     initials.innerHTML = "<span class='initial-c'>C</span><span class='initial-y'>y</span><span class='initial-k'>K</span>";
     initials.style.position = "absolute";
-    initials.style.left = "39%";
+    initials.style.left = "41%";
     initials.style.top = "50%";
     initials.style.transform = "translate(-50%, -50%)";
     initials.style.zIndex = 10;
@@ -302,5 +302,6 @@ function createCupidArrow() {
 
     }, 10000);
 }
+
 
 
