@@ -88,10 +88,14 @@ function createTreeHearts() {
     const colors = ["#ff1744","#f50057","#ff4081","#e91e63","#ff6b9d"];
     const symbols = ["❤️","💖","💗","💕","💓"];
 
+    // Obtener el tamaño actual del contenedor dinámicamente
+    const containerWidth = container.offsetWidth;
+    const containerHeight = container.offsetHeight;
+
     const total = 200;
-    const centerX = 200;
-    const centerY = 200;
-    const scale = 4.2;
+    const centerX = containerWidth / 2;
+    const centerY = containerHeight / 2;
+    const scale = Math.min(containerWidth, containerHeight) / 53;
 
     for (let i = 0; i < total; i++) {
         const t = Math.random() * Math.PI * 2;
@@ -121,8 +125,8 @@ function createTreeHearts() {
     initials.className = "heart-initials";
     initials.innerHTML = "<span class='initial-c'>C</span><span class='initial-y'>y</span><span class='initial-k'>K</span>";
     initials.style.position = "absolute";
-    initials.style.left = (centerX - 20) + "px";
-    initials.style.top = (centerY - 5) + "px";
+    initials.style.left = "40%";
+    initials.style.top = "50%";
     initials.style.transform = "translate(-50%, -50%)";
     initials.style.zIndex = 10;
     initials.style.display = "flex";
@@ -226,8 +230,8 @@ function createCupidArrow() {
         const container = document.getElementById("treeHearts");
         if (!container) return;
 
-        const centerX = 200;
-        const centerY = 200;
+        const centerX = container.offsetWidth / 2;
+        const centerY = container.offsetHeight / 2;
 
         // Crear la flecha (solo el emoji)
         const arrow = document.createElement("div");
@@ -266,8 +270,8 @@ function createCupidArrow() {
         const container = document.getElementById("treeHearts");
         if (!container) return;
 
-        const centerX = 200;
-        const centerY = 200;
+        const centerX = container.offsetWidth / 2;
+        const centerY = container.offsetHeight / 2;
         const angle = Math.random() * 360;
 
         const arrow = document.createElement("div");
